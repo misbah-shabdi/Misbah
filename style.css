@@ -9,7 +9,13 @@ html, body {
 * {
     box-sizing: border-box;
 }
-
+/* Add horizontal line below each h1 */
+h1 {
+    display: inline-block;
+    border-bottom: 2px solid #444; /* Adjust color and thickness here */
+    padding-bottom: 5px; /* Adds some space between text and the line */
+   
+}
 /* Header Styling */
 header {
     background-color: #333;
@@ -21,6 +27,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 36px;
+    border-bottom: 2px solid #ffffff;
 }
 
 header p {
@@ -44,6 +51,7 @@ header p {
 .nav {
     display: flex;
     list-style: none; 
+    gap: 15px;
     margin: 0; 
     padding: 0; 
 }
@@ -104,6 +112,7 @@ a:hover {
 
 #home .c h1 {
     font-size: 60px;
+    border-bottom: 2px solid #ffffff;
 }
 
 #home .c p {
@@ -113,7 +122,7 @@ a:hover {
 
 /* Content Sections */
 section {
-    padding: 60px 0;
+    padding: 20px 0 30px 0;
 }
 /* Section background colors */
 #portfolio {
@@ -131,6 +140,19 @@ section {
 #contact {
     background-color: lightsalmon;
 }
+#contact a{
+    color: rgb(13, 13, 13); 
+    text-decoration: none; 
+    text-transform: lowercase; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#contact a:hover {
+    background-color: hotpink; 
+    color: #fff; 
+}   
 
 #related {
     background-color: lightyellow;
@@ -149,14 +171,14 @@ section {
     height: auto;
     display: block;
     border-radius: 10%;
-    margin: 20px auto; /* Add margin to center images */
+    margin: 40px auto; /* Add margin to center images */
 
 }
 .content h1 {
     font-size: 32px;
     text-align: center;
     color: #28334A;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
 }
 
@@ -169,7 +191,12 @@ ul {
 ul li {
     margin-bottom: 12px; 
     font-size: 22px;
+    color: #000000;
+}
+ol li {
+    margin-bottom: 12px; 
     color: #000000; 
+    font-size: 20px;
 }
 p {
     font-size: 18px;
@@ -182,14 +209,14 @@ b {
 }
 #portfolio {
     background-color: rgb(234, 181, 181); 
-    padding: 60px 20px; 
+    padding: 20px 20px 30px 20px; 
 }
 
 #portfolio h1 {
     font-size: 32px;
     text-align: center;
     color: #28334A;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #portfolio .content {
@@ -202,19 +229,23 @@ b {
     list-style-type: disc;
     padding-left: 20px; 
     line-height: 1.6; 
+    font-size: 20px;
 }
 
 #portfolio ul li {
     margin-bottom: 12px; 
-    font-size: 18px;
+    font-size: 20px;
     color: #000000; 
 }
 
 #portfolio p {
-    font-size: 30px;
-    color: #555;
+    font-size: 20px;
+    color: #101010;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+#portfolio h3{
+    font-size: 20px;
 }
 
 #portfolio ul li b {
@@ -246,6 +277,23 @@ b {
 #portfolio button:hover {
     background-color: #45a049;
 }
+.ol-outside{
+    font-size: 20px;
+}
+.indent-ul{
+    margin-left: 28px;
+}
+
+.indent-ol{
+    padding-left: 34px;
+}
+.indent-ol-last{
+    padding-left: 29px;
+    font-size: 20px;
+}
+.indent-ol li{
+    font-size: 20px;
+}
 
 button {
     background-color: #4CAF50;
@@ -262,6 +310,33 @@ button:hover {
     background-color: #45a049;
 }
 
+.query-box{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: left;
+ width: 65%;
+ padding-left: 20px;
+}
+.queries-class{
+    font-size: large;
+    width: 100%;
+    height: auto;
+    min-height: 180px; /* Minimum height */
+    max-height: 80vh; /* Limits height to 80% of the viewport */
+    resize: none;      /* Disables the adjustable (resize) bar */
+    overflow-y: auto;  /* Adds a scroll bar if content overflows vertically */
+}
+.query-box button{
+    align-self: center;
+    margin: 0px;
+}
+#charCount{
+    font-size: 18px;
+    color: #736e6e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 footer {
     background-color: #28334A;
